@@ -167,6 +167,8 @@ body {
 .left-content>a {
   text-decoration: none;
   width: max-content;
+  font-size: var(--md);
+  font-weight: var(--medium);
   padding: 10px 47px;
   color: var(--white);
   border-radius: 12px;
@@ -209,7 +211,7 @@ body {
 /* ------- Responsive CSS start ------- */
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 576px) {
 
   /* Menu Bar Responsive start */
   .menubar {
@@ -240,6 +242,49 @@ body {
   }
 
   /* Menubar Responsive end */
+
+
+
+  /* Banner Section Responsive start */
+
+  .banner-contents {
+    flex-direction: column-reverse;
+    gap: 20px;
+    max-width: 357px;
+  }
+
+  .ban-title {
+    font-size: var(--big);
+    text-align: center;
+  }
+
+  .ban-subtitle {
+    font-size: var(--md-mb);
+    font-weight: var(--medium);
+    text-align: center;
+  }
+
+  .left-content {
+    align-items: center;
+  }
+
+  .left-content>a {
+    padding: 8px 24px;
+    font-size: var(--md-mb);
+    font-weight: var(--medium);
+    border-radius: 8px;
+  }
+
+  .right-content {
+    min-width: 90%;
+  }
+
+  .right-content>img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Banner Section Responsive end */
 
 
 
