@@ -305,6 +305,12 @@ body {
   cursor: pointer;
 }
 
+:is(.pag-btns) :is(.right-pag:hover, .left-pag:hover) {
+  background-color: rgb(236, 161, 31);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
 :is(.right-pag, .left-pag) :is(i) {
   color: var(--white);
   font-size: 1.5rem;
