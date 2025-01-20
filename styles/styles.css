@@ -1,9 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+  /* Colors */
+  --orange: rgba(254, 163, 1, 1);
+  --sky-blue: rgba(1, 172, 253, 1);
+  --cyan: rgba(5, 212, 223, 1);
+  --purple: rgba(93, 88, 239, 1);
+  --white: rgba(93, 88, 239, 1);
+  --black-primary: rgba(17, 17, 17, 1);
+  --black-txt: rgba(0, 0, 0, 1);
+
+  /* Font Styles */
+  /* font-family */
+  --quicksand: "Quicksand", serif;
+  --raleway: "Raleway", serif;
+  
+  /* sizes & weights */
+  --sml: 1rem;
+  --md: 1.3rem;
+  --semi: 1.5rem;
+  --lg: 2.4rem;
+  --xt-lg: 3.2rem;
+
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --xt-bold: 800;
+
+  /* mobile font styles */
+  --xt-sml-mb: 0.6rem; 
+  --sml-mb: 0.8rem;
+  --md-mb: 1rem;
+  --semi: 1.5rem;
+  --lg-mb: 2rem;
+}
+
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background-color: #F7F7F7;
+}
+
+
 
 
