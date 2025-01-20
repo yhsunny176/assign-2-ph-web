@@ -188,6 +188,132 @@ body {
 
 
 
+/* Standard Curriculum Section CSS start */
+
+.std-curr-section {
+  width: 100dvw;
+  height: 879px;
+  padding: 80px 0;
+  background-image: url('../assets/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+.std-curr-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  max-width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: var(--lg);
+  font-weight: var(--bold);
+  color: var(--black-txt);
+}
+
+.curr-card-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.curr-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 33px;
+  align-items: center;
+  padding: 52px 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.curr-card-1 {
+  border: 1px solid #DEF5FF;
+  background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+  box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+.curr-card-2 {
+  border: 1px solid #FFF4DC;
+  background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+  box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+.curr-card-3 {
+  border: 1px solid #F2E8FF;
+  background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+  box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+:is(.curr-card) :is(img) {
+  width: 52%;
+  height: auto;
+}
+
+:is(.curr-card) :is(h3) {
+  font-size: var(--semi);
+  font-weight: var(--bold);
+  color: rgba(32, 32, 32, 1);
+}
+
+:is(.curr-card) :is(p) {
+  font-size: var(--sml);
+  font-weight: var(--medium);
+  color: rgba(128, 128, 128, 1);
+  line-height: 28px;
+  text-align: center;
+}
+
+:is(.curr-card) :is(a) {
+  font-size: var(--sml);
+  font-weight: var(--bold);
+  text-decoration: none;
+}
+
+.read-more-1 {
+  color: rgba(100, 200, 255, 1);
+}
+
+.read-more-2 {
+  color: rgba(240, 170, 0, 1);
+}
+
+.read-more-3 {
+  color: rgba(135, 0, 255, 1);
+}
+
+.pag-btns {
+  display: flex;
+  gap: 10px;
+}
+
+:is(.pag-btns) :is(.right-pag, .left-pag) {
+  padding: 18px 22px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+:is(.right-pag, .left-pag) :is(i) {
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Standard Curriculum Section CSS end */
+
+
 
 
 
