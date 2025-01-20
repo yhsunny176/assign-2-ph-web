@@ -128,6 +128,11 @@ body {
 
 /* Menu CSS end */
 
+
+
+
+/* Banner Section CSS Start */
+
 .banner-section {
   width: 100dvw;
 }
@@ -176,6 +181,8 @@ body {
 .left-content h1 span:nth-child(2) {
   color: var(--sky-blue);
 }
+
+/* Banner Section CSS end */
 
 
 
