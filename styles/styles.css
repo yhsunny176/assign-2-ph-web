@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
   /* Colors */
   --orange: rgba(254, 163, 1, 1);
   --sky-blue: rgba(1, 172, 253, 1);
@@ -9,15 +9,17 @@
   --white: rgba(93, 88, 239, 1);
   --black-primary: rgba(17, 17, 17, 1);
   --black-txt: rgba(0, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
 
   /* Font Styles */
   /* font-family */
   --quicksand: "Quicksand", serif;
   --raleway: "Raleway", serif;
-  
+
   /* sizes & weights */
   --sml: 1rem;
   --md: 1.3rem;
+  --big: 2rem;
   --semi: 1.5rem;
   --lg: 2.4rem;
   --xt-lg: 3.2rem;
@@ -29,7 +31,7 @@
   --xt-bold: 800;
 
   /* mobile font styles */
-  --xt-sml-mb: 0.6rem; 
+  --xt-sml-mb: 0.6rem;
   --sml-mb: 0.8rem;
   --md-mb: 1rem;
   --semi: 1.5rem;
@@ -38,16 +40,80 @@
 
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
+  font-family: var(--quicksand);
+  font-weight: var(--regular);
   background-color: #F7F7F7;
 }
 
+/* Header Section CSS */
 
+/* Menu CSS Start*/
 
+.menubar {
+  padding: 1.2rem;
+  margin: 0 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.logo {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo>span {
+  font-size: var(--big);
+  font-weight: var(--bold);
+  color: var(--black-primary);
+}
+
+.menubar a {
+  text-decoration: none;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-items li a {
+  font-size: var(--md);
+  font-weight: var(--medium);
+}
+
+#navlink-1 {
+  color: var(--orange);
+}
+
+#navlink-2 {
+  color: var(--sky-blue);
+}
+
+#navlink-3 {
+  color: var(--cyan);
+}
+
+#navlink-4 {
+  color: var(--purple);
+}
+
+.contact-btn {
+  color: var(--white);
+  padding: 10px 60px;
+  background-color: var(--orange);
+  border-radius: 10px;
+}
+
+/* Menu CSS end */
