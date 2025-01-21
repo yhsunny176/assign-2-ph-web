@@ -799,6 +799,45 @@ footer {
 
   /* Footer section Responsive Start */
 
+  footer {
+    padding: 65px 0;
+  }
+
+  .footer-contents {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+    max-width: 92%;
+  }
+
+  .foot-left {
+    gap: 22px;
+  }
+
+  .foot-left>p {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  :is(.foot-mid, .foot-right) h3 {
+    font-size: 1.4rem;
+  }
+
+  .quick-links {
+    gap: 16px;
+    margin-top: 26px;
+  }
+
+  .quick-links li a {
+    font-size: 1.1rem;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 26px;
+  }
+
+
   /* Footer section Responsive end */
 
 
