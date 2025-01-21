@@ -324,7 +324,7 @@ body {
 
 .our-stories {
   width: 100dvw;
-  height: 1018px;
+  height: auto;
   padding: 60px 0;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(254, 163, 1, 0.3)), url('../assets/bg.png');
   background-size: 100%;
@@ -617,6 +617,66 @@ body {
   }
 
   /* Standard Curriculum Section CSS end */
+
+
+  /* Our Stories Responsive CSS start */
+
+  .our-stories {
+    padding: 60px 0 40px;
+    height: auto;
+  }
+
+  .story-contents {
+    gap: 40px;
+  }
+
+  .story-card-wrapper {
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card-1{
+    display: none;
+  }
+
+  .card-4 .story-date {
+    background-color: rgba(93, 88, 240, 1);
+  }
+
+  .story-date {
+    position: absolute;
+    background-color: rgba(149, 178, 38, 1);
+    font-size: var(--sml-mb);
+    font-weight: var(--medium);
+    color: var(--white);
+    border-radius: 28px;
+    padding: 6px 10px;
+    left: 10%;
+    bottom: 33.5%;
+  }
+
+  :is(.card-2, .card-3, .card-4, .card-5) :is(.story-txt-wrapper) {
+    margin-top: 25px;
+    padding: 0 12% 10%;
+  }
+
+  :is(.card-2, .card-3, .card-4, .card-5) :is(h4) {
+    font-weight: var(--bold);
+    font-size: var(--sml-mb);
+    color: var(--black-txt);
+    line-height: 17px;
+  }
+
+  .story-contents>a {
+    padding: 8px 36px;
+    font-size: var(--md-mb);
+    font-weight: var(--medium);
+    border-radius: 12px;
+  }
+
+  /* Our Stories Responsive CSS end */
 
 
 
