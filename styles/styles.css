@@ -325,7 +325,7 @@ body {
 .our-stories {
   width: 100%;
   height: auto;
-  padding: 60px 0;
+  padding: 120px 0;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(254, 163, 1, 0.3)), url('../assets/bg.png');
   background-size: 100%;
   background-repeat: no-repeat;
