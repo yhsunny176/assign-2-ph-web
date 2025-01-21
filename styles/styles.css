@@ -457,12 +457,26 @@ body {
   background-color: var(--black-primary);
 }
 
-
-
-
-
 /* Our Stories Section CSS end */
 
+
+/* Notice Marquee CSS start*/
+
+.notice-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: var(--purple);
+}
+
+#notice {
+  color: var(--white);
+  font-size: var(--lg);
+  font-weight: var(--xt-bold);
+}
+
+/* Notice Marquee CSS end*/
 
 
 
@@ -637,7 +651,7 @@ body {
     gap: 20px;
   }
 
-  .card-1{
+  .card-1 {
     display: none;
   }
 
@@ -679,10 +693,23 @@ body {
   /* Our Stories Responsive CSS end */
 
 
+  /* Notice Marquee Responsive start */
 
+  .notice-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--purple);
+  }
 
+  #notice {
+    color: var(--white);
+    font-size: var(--md);
+    font-weight: var(--xt-bold);
+  }
 
-
+  /* Notice Marquee Responsive end*/
 
 
 }
