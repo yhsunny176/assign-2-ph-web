@@ -320,7 +320,148 @@ body {
 
 /* Standard Curriculum Section CSS end */
 
+/* Our Stories Section CSS start */
 
+.our-stories {
+  width: 100dvw;
+  height: 1018px;
+  padding: 60px 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(254, 163, 1, 0.3)), url('../assets/bg.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+.story-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  max-width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.story-card-wrapper {
+  display: grid;
+  max-width: 1160px;
+  grid-template-columns: 540px 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.story-card {
+  position: relative;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 16px;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.story-date {
+  position: absolute;
+  background-color: rgba(149, 178, 38, 1);
+  font-size: var(--sml);
+  font-weight: var(--medium);
+  color: var(--white);
+  border-radius: 46px;
+  padding: 10px 18px;
+  left: 10%;
+  bottom: 33.5%;
+}
+
+.card-1 .story-date {
+  background-color: var(--cyan);
+  padding: 15px 18px;
+  bottom: 46.5%;
+}
+
+.card-3 .story-date {
+  background-color: rgba(93, 88, 240, 1);
+}
+
+
+
+:is(.card-2, .card-3, .card-4, .card-5) :is(.img-wrapper) {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.story-txt-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 60px;
+  width: 100%;
+  max-height: 40%;
+  padding: 0 6% 5%;
+}
+
+:is(.card-2, .card-3, .card-4, .card-5) :is(.story-txt-wrapper) {
+  margin-top: 40px;
+}
+
+:is(.story-card) :is(img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+
+:is(.card-1) :is(h4) {
+  font-weight: var(--bold);
+  font-size: var(--big);
+  color: var(--black-txt);
+  line-height: 38px;
+}
+
+:is(.card-2, .card-3, .card-4, .card-5) :is(h4) {
+  font-weight: var(--bold);
+  font-size: var(--sml);
+  color: var(--black-txt);
+  line-height: 28px;
+}
+
+:is(.story-card) :is(p) {
+  max-width: 90%;
+  font-family: var(--raleway);
+  font-size: var(--sml);
+  font-weight: var(--medium);
+  line-height: 28px;
+  color: rgba(102, 102, 102, 1);
+}
+
+.card-1 {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.story-contents>a {
+  text-decoration: none;
+  width: max-content;
+  font-size: var(--md);
+  font-weight: var(--medium);
+  padding: 10px 60px;
+  color: var(--white);
+  border-radius: 12px;
+  background-color: var(--black-primary);
+}
+
+
+
+
+
+/* Our Stories Section CSS end */
 
 
 
@@ -476,6 +617,9 @@ body {
   }
 
   /* Standard Curriculum Section CSS end */
+
+
+
 
 
 
